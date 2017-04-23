@@ -32,4 +32,10 @@ public class RomanNumeralsTest {
 		RomanNumeralConverter converter = new RomanNumeralConverter();
 		assertEquals("C", converter.convert(100));
 	}
+	
+	@Test
+	public void whenFiveHundredIsPassedReturnD(){
+		RomanNumeralConverter converter = new RomanNumeralConverter();
+		assertEquals("D", converter.convert(500));
+	}
 }
