@@ -74,4 +74,10 @@ public class RomanNumeralsTest {
 		RomanNumeralConverter converter = new RomanNumeralConverter();
 		assertEquals("CD", converter.convert(400));
 	}
+	
+	@Test
+	public void when900IsPassedReturnCM(){
+		RomanNumeralConverter converter = new RomanNumeralConverter();
+		assertEquals("CM", converter.convert(900));
+	}
 }
