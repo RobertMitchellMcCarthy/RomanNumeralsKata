@@ -6,6 +6,8 @@ public class RomanNumeralConverter {
 		switch(inputNumber){
 		case 1: RomanNumeral = "I";
 				break;
+		case 4: RomanNumeral = "IV";
+				break;
 		case 5: RomanNumeral = "V";
 				break;
 		case 10: RomanNumeral = "X";
