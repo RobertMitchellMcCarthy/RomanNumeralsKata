@@ -1,8 +1,18 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 public class RomanNumeralConverter {
+	
+	public static void main(String args[]){
+		System.out.println("What number would you like to convert?");
+		Scanner sc = new Scanner(System.in);
+		int convertingNumber = sc.nextInt();
+		String romanNumeral = convert(convertingNumber);
+		System.out.println("Here is " + convertingNumber + " in Roman Numerals " + romanNumeral);
+		sc.close();
+	}
 
-	public String convert(Integer inputNumber){
+	public static String convert(Integer inputNumber){
 		String RomanNumeral = "";
 		int convertingNumber = 0;
 		while(inputNumber > 0){
@@ -40,7 +50,7 @@ public class RomanNumeralConverter {
 		return RomanNumeral;
 	}
 	
-	public int findHighestValue(Integer inputNumber){
+	public static int findHighestValue(Integer inputNumber){
 		ArrayList <Integer> convertingValues = new ArrayList<>(Arrays.asList(1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1));
 		for(Integer i : convertingValues){
 			if(inputNumber >= i)
