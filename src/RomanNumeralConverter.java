@@ -14,6 +14,8 @@ public class RomanNumeralConverter {
 				break;
 		case 10: RomanNumeral = "X";
 				break;
+		case 40: RomanNumeral = "XL";
+				break;
 		case 50: RomanNumeral = "L";
 				break;
 		case 100: RomanNumeral = "C";
