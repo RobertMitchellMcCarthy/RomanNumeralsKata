@@ -50,4 +50,10 @@ public class RomanNumeralsTest {
 		RomanNumeralConverter converter = new RomanNumeralConverter();
 		assertEquals("IV", converter.convert(4));
 	}
+	
+	@Test
+	public void whenNineIsPassedReturnIX(){
+		RomanNumeralConverter converter = new RomanNumeralConverter();
+		assertEquals("IX", converter.convert(9));
+	}
 }
