@@ -62,4 +62,10 @@ public class RomanNumeralsTest {
 		RomanNumeralConverter converter = new RomanNumeralConverter();
 		assertEquals("XL", converter.convert(40));
 	}
+	
+	@Test
+	public void whenNinetyIsPassedReturnXC(){
+		RomanNumeralConverter converter = new RomanNumeralConverter();
+		assertEquals("XC", converter.convert(90));
+	}
 }
