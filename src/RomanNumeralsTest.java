@@ -86,4 +86,17 @@ public class RomanNumeralsTest {
 		RomanNumeralConverter converter = new RomanNumeralConverter();
 		assertEquals(100, converter.findHighestValue(300));
 	}
+	
+	@Test
+	public void whenTwoIsPassedReturnII(){
+		RomanNumeralConverter converter = new RomanNumeralConverter();
+		assertEquals("II", converter.convert(2));
+	}
+	
+	@Test
+	public void whenSevenHundredEightyIsPassedReturnDCCLXXX(){
+		RomanNumeralConverter converter = new RomanNumeralConverter();
+		assertEquals("DCCLXXX", converter.convert(780));
+	}
+	
 }
