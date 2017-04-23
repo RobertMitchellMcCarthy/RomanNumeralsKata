@@ -26,4 +26,10 @@ public class RomanNumeralsTest {
 		RomanNumeralConverter converter = new RomanNumeralConverter();
 		assertEquals("L", converter.convert(50));
 	}
+	
+	@Test
+	public void whenOneHundredIsPassedReturnC(){
+		RomanNumeralConverter converter = new RomanNumeralConverter();
+		assertEquals("C", converter.convert(100));
+	}
 }
