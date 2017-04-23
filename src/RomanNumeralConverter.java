@@ -16,6 +16,8 @@ public class RomanNumeralConverter {
 				break;
 		case 500: RomanNumeral = "D";
 				break;
+		case 1000: RomanNumeral = "M";
+				break;
 		}
 		return RomanNumeral;
 	}
