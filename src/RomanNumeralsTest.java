@@ -6,6 +6,13 @@ public class RomanNumeralsTest {
 	@Test
 	public void whenOneIsPassedReturnI(){
 		RomanNumeralConverter converter = new RomanNumeralConverter();
-		assertEquals("I", converter.convertOne(1));
+		assertEquals("I", converter.convert(1));
 	}
+	
+	@Test
+	public void whenFiveIsPassedReturnV(){
+		RomanNumeralConverter converter = new RomanNumeralConverter();
+		assertEquals("V", converter.convert(5));
+	}
+	
 }

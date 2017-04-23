@@ -1,7 +1,14 @@
 
 public class RomanNumeralConverter {
 
-	public String convertOne(Integer inputNumber){
-		return "I";
+	public String convert(Integer inputNumber){
+		String RomanNumeral = "";
+		switch(inputNumber){
+		case 1: RomanNumeral = "I";
+				break;
+		case 5: RomanNumeral = "V";
+				break;
+		}
+		return RomanNumeral;
 	}
 }
