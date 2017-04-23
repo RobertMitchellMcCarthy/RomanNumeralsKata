@@ -1,4 +1,5 @@
-
+import java.util.ArrayList;
+import java.util.Arrays;
 public class RomanNumeralConverter {
 
 	public String convert(Integer inputNumber){
@@ -31,6 +32,16 @@ public class RomanNumeralConverter {
 		case 1000: RomanNumeral = "M";
 				break;
 		}
+	
 		return RomanNumeral;
+	}
+	
+	public int findHighestValue(Integer inputNumber){
+		ArrayList <Integer> convertingValues = new ArrayList<>(Arrays.asList(1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1));
+		for(Integer i : convertingValues){
+			if(inputNumber > i)
+				return i;
+		}
+		return 1;
 	}
 }

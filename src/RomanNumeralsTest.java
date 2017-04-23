@@ -80,4 +80,10 @@ public class RomanNumeralsTest {
 		RomanNumeralConverter converter = new RomanNumeralConverter();
 		assertEquals("CM", converter.convert(900));
 	}
+	
+	@Test
+	public void findHighestConvertingValue(){
+		RomanNumeralConverter converter = new RomanNumeralConverter();
+		assertEquals(100, converter.findHighestValue(300));
+	}
 }
