@@ -8,6 +8,8 @@ public class RomanNumeralConverter {
 				break;
 		case 5: RomanNumeral = "V";
 				break;
+		case 10: RomanNumeral = "X";
+				break;
 		}
 		return RomanNumeral;
 	}

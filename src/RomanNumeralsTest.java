@@ -15,4 +15,9 @@ public class RomanNumeralsTest {
 		assertEquals("V", converter.convert(5));
 	}
 	
+	@Test
+	public void whenTenIsPassedReturnX(){
+		RomanNumeralConverter converter = new RomanNumeralConverter();
+		assertEquals("X", converter.convert(10));
+	}
 }
